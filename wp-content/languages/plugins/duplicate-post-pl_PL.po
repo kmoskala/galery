@@ -1,0 +1,280 @@
+# Translation of Plugins - Yoast Duplicate Post - Stable (latest release) in Polish
+# This file is distributed under the same license as the Plugins - Yoast Duplicate Post - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2022-02-09 07:37:41+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 1) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/3.0.0-alpha.2\n"
+"Language: pl\n"
+"Project-Id-Version: Plugins - Yoast Duplicate Post - Stable (latest release)\n"
+
+#. Author URI of the plugin
+msgid "https://yoast.com"
+msgstr "https://yoast.com"
+
+#. translators: %s: Post title.
+#: src/ui/row-actions.php:112
+msgid "New draft of &#8220;%s&#8221;"
+msgstr "Nowy szkic &#8220;%s&#8221;"
+
+#: src/ui/column.php:130 src/ui/metabox.php:89
+msgid "Delete reference to original item."
+msgstr "Usuń odniesienia do oryginalnego elementu."
+
+#. Author of the plugin
+msgid "Enrico Battocchi & Team Yoast"
+msgstr "Enrico Battocchi i zespół Yoast"
+
+#. Plugin URI of the plugin
+msgid "https://yoast.com/wordpress/plugins/duplicate-post/"
+msgstr "https://yoast.com/wordpress/plugins/duplicate-post/"
+
+#: src/ui/row-actions.php:87
+msgctxt "verb"
+msgid "Clone"
+msgstr "Powiel"
+
+#. translators: %s: Post title.
+#: src/ui/row-actions.php:85
+msgid "Clone &#8220;%s&#8221;"
+msgstr "Klonuj &#8220;%s&#8221;"
+
+#: src/ui/column.php:68
+msgid "Original item"
+msgstr "Oryginalny element"
+
+#: src/admin/options.php:246
+msgid "In a column in the Post list"
+msgstr "W kolumnie na liście wpisów"
+
+#: src/admin/options.php:256
+msgid "After the title in the Post list"
+msgstr "Po tytule na liście wpisów"
+
+#. translators: %s: post title
+#: src/utils.php:122
+msgid "Edit &#8220;%s&#8221;"
+msgstr "Edytuj &#8222;%s&#8221;"
+
+#. translators: %s: Original item link (to view or edit) or title.
+#: src/ui/post-states.php:67
+msgid "Original: %s"
+msgstr "Oryginalnie: %s"
+
+#. translators: %s: post title
+#: src/utils.php:134
+msgid "Preview &#8220;%s&#8221;"
+msgstr "Podejrzyj &#8222;%s&#8221;"
+
+#. translators: %s: post title
+#: src/utils.php:144
+msgid "View &#8220;%s&#8221;"
+msgstr "Zobacz &#8222;%s&#8221;"
+
+#: src/handlers/link-handler.php:58 src/handlers/link-handler.php:114
+#: src/handlers/link-handler.php:188
+msgid "Current user is not allowed to copy posts."
+msgstr "Użytkownik nie posiada uprawnień do duplikowania wpisów."
+
+#: admin-functions.php:750
+msgid "Documentation"
+msgstr "Dokumentacja"
+
+#: src/admin/options.php:165
+msgid "you probably want this unchecked, unless you have very special requirements"
+msgstr "prawdopodobnie nie chcesz włączać tej opcji, dopóki nie masz bardzo specyficznych wymagań"
+
+#: src/admin/options.php:149
+msgid "Author"
+msgstr "Autor"
+
+#: src/admin/options.php:135
+msgid "Template"
+msgstr "Szablon"
+
+#: src/admin/options.php:217
+msgid "You can use * to match zero or more alphanumeric characters or underscores: e.g. field*"
+msgstr "Możesz użyć znaku * aby dopasować zero lub więcej znaków alfanumerycznych lub znaków podłogi: np. field*"
+
+#: src/admin/options.php:128
+msgid "Featured Image"
+msgstr "Obrazek wyróżniający"
+
+#: src/admin/options.php:307
+msgid "Bulk Actions"
+msgstr "Działania masowe"
+
+#: src/admin/options.php:186
+msgid "Menu order"
+msgstr "Kolejność w menu"
+
+#. translators: %s: Number of posts copied.
+#: src/watchers/bulk-actions-watcher.php:55
+#: src/watchers/link-actions-watcher.php:73
+msgid "%s item copied."
+msgid_plural "%s items copied."
+msgstr[0] "%s element skopiowany."
+msgstr[1] "%s elementy skopiowane"
+msgstr[2] "%s elementów skopiowanych"
+
+#: src/admin/options.php:100
+msgid "Status"
+msgstr "Status"
+
+#: src/admin/options.php:86 src/handlers/check-changes-handler.php:126
+msgid "Title"
+msgstr "Tytuł"
+
+#: src/admin/options.php:93
+msgid "Date"
+msgstr "Data"
+
+#: src/admin/options.php:156
+msgid "Password"
+msgstr "Hasło"
+
+#: src/admin/views/options.php:37 src/admin/views/options.php:140
+msgid "Permissions"
+msgstr "Uprawnienia"
+
+#: src/admin/views/options.php:28 src/admin/views/options.php:55
+msgid "What to copy"
+msgstr "Co kopiować"
+
+#: src/admin/views/options.php:162 src/admin/views/options.php:166
+msgid "Enable for these post types"
+msgstr "Włącz dla tych typów wpisów"
+
+#: src/admin/views/options.php:127
+msgid "Show/hide private taxonomies"
+msgstr "Pokaż/ukryj prywatne taksonomie"
+
+#: src/admin/options.php:208
+msgid "Add this number to the original menu order (blank or zero to retain the value)"
+msgstr "Dodaj tę liczbę do oryginalnej wartości kolejności w menu (puste pole lub zero zachowa obecną wartość)"
+
+#: src/admin/options.php:206 src/admin/views/options.php:93
+msgid "Increase menu order by"
+msgstr "Zwiększ pole kolejności menu o"
+
+#: src/admin/options.php:180
+msgid "except pingbacks and trackbacks"
+msgstr "Z wyjątkiem pingbacków i trackbacków"
+
+#: src/admin/options.php:178
+msgid "Comments"
+msgstr "Komentarze"
+
+#: src/admin/options.php:171
+msgid "Children"
+msgstr "Elementy potomne"
+
+#: src/admin/options.php:163
+msgid "Attachments"
+msgstr "Załączniki"
+
+#: src/admin/options.php:107
+msgid "Slug"
+msgstr "Uproszczona nazwa"
+
+#: admin-functions.php:603
+msgid "Copy features for this post type are not enabled in options page"
+msgstr "Funkcja kopiowania dla tego typu wpisów nie jest włączona w ekranie opcji"
+
+#: src/admin/options.php:114 src/handlers/check-changes-handler.php:128
+msgid "Excerpt"
+msgstr "Zajawka"
+
+#: src/admin/views/options.php:58 src/admin/views/options.php:61
+msgid "Post/page elements to copy"
+msgstr "Elementy strony/wpis do zduplikowania"
+
+#: src/admin/options.php:121 src/handlers/check-changes-handler.php:127
+msgid "Content"
+msgstr "Treść"
+
+#: src/admin/views/options.php:46 src/admin/views/options.php:187
+msgid "Display"
+msgstr "Wyświetlacz"
+
+#: duplicate-post.php:99
+msgid "Settings"
+msgstr "Ustawienia"
+
+#: src/admin/options.php:271 src/ui/row-actions.php:114
+msgid "New Draft"
+msgstr "Nowy szkic"
+
+#: src/admin/views/options.php:116 src/admin/views/options.php:120
+msgid "Do not copy these taxonomies"
+msgstr "Nie kopiuj tych taksonomii"
+
+#: src/admin/options.php:194
+msgid "Prefix to be added before the title, e.g. \"Copy of\" (blank for no prefix)"
+msgstr "Prefiks dodawany do oryginalnego tytułu, np \"Kopia \" (pozostaw puste aby nie używać prefiksu)"
+
+#: src/admin/options.php:199 src/admin/views/options.php:82
+msgid "Title suffix"
+msgstr "Sufiks tytułu"
+
+#: src/admin/options.php:201
+msgid "Suffix to be added after the title, e.g. \"(dup)\" (blank for no suffix)"
+msgstr "Tekst dodawany na końcu oryginalnego tytułu, np. \"(kopia)\" (pozostaw puste aby nie dodawać sufiksu)"
+
+#: src/admin/views/options.php:144 src/admin/views/options.php:147
+msgid "Roles allowed to copy"
+msgstr "Jakie role mogą tworzyć kopie"
+
+#: src/admin/views/options.php:202
+msgid "Show links in"
+msgstr "Pokazuj linki w"
+
+#: src/admin/options.php:302
+msgid "Edit screen"
+msgstr "Ekranie edycji"
+
+#: src/admin/options.php:276 src/ui/bulk-actions.php:69
+msgid "Clone"
+msgstr "Powiel"
+
+#: src/handlers/link-handler.php:75 src/handlers/link-handler.php:131
+#: src/handlers/link-handler.php:205
+msgid "Copy creation failed, could not find original:"
+msgstr "Nie udało się powielić kreacji, ponieważ nie znaleziono oryginału:"
+
+#: src/admin/options.php:292
+msgid "Post list"
+msgstr "Lista wpisów"
+
+#: src/admin/options.php:213 src/admin/views/options.php:105
+msgid "Do not copy these fields"
+msgstr "Nie kopiuj tych pól"
+
+#: src/admin/options.php:192 src/admin/views/options.php:71
+msgid "Title prefix"
+msgstr "Przedrostek tytułu"
+
+#: src/admin/options-page.php:77 src/ui/admin-bar.php:89 src/ui/metabox.php:59
+msgid "Duplicate Post"
+msgstr "Powielanie wpisów"
+
+#: src/admin/options-page.php:76 src/admin/views/options.php:14
+msgid "Duplicate Post Options"
+msgstr "Opcje"
+
+#: src/handlers/link-handler.php:63 src/handlers/link-handler.php:119
+#: src/handlers/link-handler.php:193
+msgid "No post to duplicate has been supplied!"
+msgstr "Brak postów do powielania!"
+
+#: common-functions.php:79 src/ui/admin-bar.php:97 src/ui/admin-bar.php:115
+#: src/ui/classic-editor.php:135 js/dist/duplicate-post-edit-440.js:1
+msgid "Copy to a new draft"
+msgstr "Skopiuj do nowego szkicu"
+
+#: src/admin/options.php:297
+msgid "Admin bar"
+msgstr "Pasek administratora"

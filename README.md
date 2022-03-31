@@ -1,1 +1,2 @@
-# galery
+# cakeGallery
+Page with mansonry gallery on WP

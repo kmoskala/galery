@@ -1,0 +1,45 @@
+{% block html_head_container %}
+<!doctype html>
+<!--[if lt IE 9]><html class="no-js no-svg ie lt-ie9 lt-ie8 lt-ie7" {{ site.language_attributes }}> <![endif]-->
+<!--[if IE 9]><html class="no-js no-svg ie ie9 lt-ie9 lt-ie8" {{ site.language_attributes }}> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js no-svg" {{ site.language_attributes }}>
+<!--<![endif]-->
+{% include 'head.twig' %}
+{% endblock %}
+
+<body class="{{body_class}}" data-template="base.twig">
+	<main id="content" role="main">
+		{% include 'header.twig' %}
+		<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script> -->
+		<!-- <div class="spinner__container">
+            <div class="spinner">
+                <div class="inner one"></div>
+                <div class="inner two"></div>
+                <div class="inner three"></div>
+            </div>
+        </div> -->
+		<div class="wrapper {{sidebar_class}}">
+			{% block content %}
+			Sorry, no content
+			{% endblock %}
+		</div>
+		{% include 'footer.twig' %}
+		<div id="wp_footer">
+			{{ function('wp_footer') }}
+			<script>
+				document.addEventListener("DOMContentLoaded", function(){
+        /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+        	element.addEventListener('click', function (e) {
+        		e.stopPropagation();
+        	});
+        })
+    }); 
+			</script>
+		</div>
+	</main>
+</body>
+
+</html>

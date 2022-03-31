@@ -1,0 +1,92 @@
+.mansonry {
+    .card_cake {
+        margin: 0 auto 15px;
+        overflow: hidden;
+        border: 5px solid #fff;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 1px (rgba(0,0,0,0.4));
+        .image {
+            width: 100%;
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 5px;
+
+            img {
+                object-fit: fill;
+                width: 100%;
+                transition: .4s all ease;
+            }
+            .layer {
+                position: absolute;
+                border-radius: 5px;
+                display: none;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0,0,0,0.5);
+                top: 0;
+                left: 0;
+                z-index: 99;
+                flex-flow: column;
+                justify-content: center;
+                align-items: center;
+                transition: .4s all ease;
+                .hidden_part {
+                    display: none;
+                }
+                .visibility_part {
+                    display: none;
+                    button {
+                        border-radius: 30px;
+                        width: max-content;
+                        border: none;
+                        outline: none;
+                        padding: 8px 25px;
+                        background-color: #D5A8B3;
+                        color: #fff;
+                        text-transform: lowercase;
+                        letter-spacing: 0.4px;
+                        cursor: pointer;
+
+                    }
+                }
+                .description {
+                    color: white;
+                    font-size: 16px;
+                    line-height: 26px;
+                    display: none;
+                    text-align: center;
+                }
+                .date {
+                    color: white;
+                    font-weight: bold;
+                    display: none;
+                    text-align: center;
+                }
+            }
+            &:hover {
+                overflow: hidden;
+                img {
+                    transform: scale(1.2);
+                }
+                .layer {
+                    display: flex;
+                    border-radius: 5px;
+
+                    .visibility_part {
+                        display: block;
+                    }
+                    .hidden_part {
+                        display: none;
+                    }
+                    .description {
+                        display: block;
+                    }
+                    .date {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

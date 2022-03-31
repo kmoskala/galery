@@ -1,0 +1,17 @@
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="content-wrapper">
+	<article class="post-type-{{post.post_type}} page-{{post.ID}}" id="post-single">
+		<section class="article-content">
+			<div class="article-body container">
+				<div class="row">
+					<div class="col-12">
+						{{post.content}}
+					</div>
+				</div>
+			</div>
+		</section>
+	</article>
+</div><!-- /content-wrapper -->
+{% endblock %}

@@ -1,0 +1,5 @@
+<header class="header {% if function('is_front_page') or function('is_home') %}header--front_page{% endif %}">
+{% block header %} 
+    {% include 'menu.twig' with {'menu': header_menu.get_items}%}
+{% endblock %} 
+</header>

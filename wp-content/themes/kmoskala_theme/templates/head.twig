@@ -1,0 +1,15 @@
+{% block head %}
+<head>
+	<meta charset="{{ site.charset }}" />
+	<meta name="description" content="{{ site.description }}">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="author" href="{{ site.theme.link }}/humans.txt" />
+	<link rel="pingback" href="{{ site.pingback_url }}" />
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	{{function('wp_head')}}
+	<script src="//assets.adobedtm.com/175f7caa2b90/231ea614a793/launch-fde07185f5da.min.js" async></script>
+
+</head>
+{% endblock %}

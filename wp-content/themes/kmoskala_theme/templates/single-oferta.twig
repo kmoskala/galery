@@ -1,0 +1,21 @@
+
+{% extends "base.twig" %}
+
+{% block content %}
+<div class="content-wrapper">
+	<article class="post-type-{{post.post_type}} page-{{post.ID}}" id="post-single">
+		<section class="article-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						{{fn('do_shortcode','[wpseo_breadcrumb]')}}
+					</div>
+				</div>
+			</div>
+		</section>
+        <section class="article-body">
+            {{post.content}}
+        </section>
+	</article>
+</div><!-- /content-wrapper -->
+{% endblock %}

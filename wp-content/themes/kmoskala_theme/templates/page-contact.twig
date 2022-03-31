@@ -1,0 +1,81 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <section class="hero" style=" background-image: url({{post.meta('bg')}});">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="white">{{post.title}}</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    {%if post.content %}
+    <section class="content">
+        {{post.content}}
+    </section>
+    {% endif %}
+    <section class="content content_workers">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-12">
+                    <h2 class="h2_contact">{{post.meta('first_column_title')}}</h2>
+                        <p class="tel"><span>{{option.firma}}</span>{{post.meta('firma')}}</p>
+                        <p class="tel d-flex align-items-start justify-content-beteen"><span>{{option.adres}}</span><span class="normal">{{post.meta('adres')}}</span></p><br><br>
+                        <p class="tel"><span>{{option.tel}}</span><a href="tel:{{post.meta('tel')}}" class="normal">{{post.meta('tel')}}</a></p>
+                        <p class="tel"><span>{{option.fax}}</span><a href="tel:{{post.meta('fax')}}" class="normal">{{post.meta('fax')}}</a></p><br><br>
+                        <p class="tel"><span>{{option.mail}}</span><a href="mailto:{{post.meta('mail')}}" class="normal">{{post.meta('mail')}}</a></p>
+                        <p class="tel"><span>{{option.nip}}</span>{{post.meta('nip')}}</p>
+                        <p class="tel"><span>{{option.regon}}</span>{{post.meta('regon')}}</p>
+                        <p class="tel"><span>{{option.krs}}</span>{{post.meta('krs')}}</p>
+                            
+                </div>
+                <div class="col-md-6 col-12 flexik">
+                    <h2 class="h2_contact">{{post.meta('second_column_title')}}</h2>
+                    {% for k in post.meta('workers')%}
+                        <div class="workers">
+                            <p class="name">{{k.name}}</p>
+                            <p class="job">{{k.job}}</p>
+                            {%if k.tel %}
+                                <p class="tel"><span>{{option.tel}}</span><a href="tel:{{k.tel}}" class="normal">{{k.tel}}</a></p>
+                            {% endif %}
+                            {% if k.kom %}
+                                <p class="tel"><span>{{option.kom}}</span><a href="tel:{{k.kom}}" class="normal">{{k.kom}}</a></p>
+                            {% endif %}
+                            {% if k.mail %}
+                                <p class="tel"><span>{{option.mail}}</span><a href="mailto:{{k.mail}}" class="normal">{{k.mail}}</a></p>
+                            {% endif %}
+                            {% if k.skype %}
+                                <p class="tel"><span>{{option.skype}}</span>{{k.skype}}</p>
+                            {% endif %}
+                        </div>
+                        
+                    {% endfor %}
+                </div>
+                <div class="col-md-3 col-12">
+                    <h2 class="h2_contact">{{post.meta('third_column_title')}}</h2>
+                    {% for k in post.meta('workers2')%}
+                        <div class="worker">
+                            <p class="name">{{k.name}}</p>
+                            <p class="job">{{k.job}}</p>
+                            {%if k.tel %}
+                                <p class="tel"><span>{{option.tel}}</span><a href="tel:{{k.tel}}" class="tel">{{k.tel}}</a></p>
+                            {% endif %}
+                            {% if k.kom %}
+                                <p class="tel"><span>{{option.kom}}</span><a href="tel:{{k.kom}}" class="tel">{{k.kom}}</a></p>
+                            {% endif %}
+                            {% if k.mail %}
+                                <p class="tel"><span>{{option.mail}}</span><a href="mailto:{{k.mail}}" class="tel">{{k.mail}}</a></p>
+                            {% endif %}
+                            {% if k.skype %}
+                                <p class="tel"><span>{{option.skype}}</span>{{k.skype}}</p>
+                            {% endif %}
+                        </div>
+                        
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

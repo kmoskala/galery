@@ -1,0 +1,33 @@
+{#
+/**
+ * Block Name: Gallery mansonry
+ * This is the template that displays the example block.
+ */
+#}
+<section class="mansonry">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div id="macy">
+
+                    {% for gallery in acf.gallery %}
+                        <figure class="card_cake">
+                            <div class="image">
+                                <img src="{{Image(gallery.img).src}}" alt="{{Image(gallery.img).src}}">
+                                <div class="layer">
+                                    <div class="hidden_part">
+                                        <div class="description">{{gallery.description}}</div>
+                                        <div class="date">{{gallery.date}}</div>
+                                    </div>
+                                    <div class="visibility_part">
+                                        <button class="see_more">Zobacz więcej</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </figure>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
